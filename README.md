@@ -10,11 +10,11 @@
 
     Примеры:
     
-    - Менеджер паролей [Passer](https://github.com/Onran0/Passer)
+    - Консольный менеджер паролей [Passer](https://github.com/Onran0/Passer)
     
-    - Библиотека [JSW](https://github.com/Onran0/JSW) для удобной работы с форматом .structure
+    - Библиотека [JSW](https://github.com/Onran0/JSW) для удобной работы с бинарным форматом .structure игры [Sandbox World](https://store.steampowered.com/app/1831480/Sandbox_World/)
     
-    - Ассемблер [medpow8](https://github.com/Onran0/medpow8-assembler) для собственной архитектуры ЦП
+    - [medpow8-assembler](https://github.com/Onran0/medpow8-assembler) для собственной архитектуры ЦП [medpow8](https://github.com/Onran0/medpow8) G0
     
     - [spookylauncher](https://github.com/spookylauncher/spookylauncher) для удобной игры в мистические версии Minecraft
 
