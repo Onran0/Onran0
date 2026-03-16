@@ -1,8 +1,8 @@
 ## Привет!
 
-Основные инструменты: `Java, Lua`
+Основные инструменты: `Java, Lua, JavaScript`
 
-Вторичные инструменты отсортированные от большей эрудиции: `Unity, C#, JavaScript, HTML/CSS, C++`
+Вторичные инструменты отсортированные от большей эрудиции: `Unity, C#, HTML/CSS, C++`
 
 Инженер-разработчик, в основном ориентированный на системное и движковое программирование:
 архитектура, бинарные форматы, протоколы, I/O, расширяемые движки, инструменты и т.д.
@@ -46,14 +46,21 @@
     
     - [VCLibPNG](https://github.com/Onran0/VCLibPNG) для **I/O** с **PNG**.
         - На момент создания решал проблемы того, что в **VoxelCore** нельзя было динамически редактировать и загружать **PNG** изображения. Вот несколько проектов, где была использована данная библиотека: [The Signs](https://voxelworld.ru/mods/the-signs), [better-map](https://github.com/GHOST3118/better-map/tree/main)
+
+* **JavaScript:** Конкретного направления также нет. Использую там, где это необходимо, однако считаю язык весьма удобным.
+
+    Примеры:
+    - [matx](https://github.com/Onran0/matx) - язык программирования, транслирующийся в формулу для математического блока из игры [Sandbox World](https://store.steampowered.com/app/1831480/Sandbox_World/). (W.I.P)
+        - Позволит писать более масштабные проекты намного быстрее благодаря сахару и абстракциям.
+
+    
+    - [voxelbench](https://github.com/Onran0/voxelbench) - плагин для блокбенча, позволяющий экспортировать модели в формат `.vcm` (Voxel Core Model).
+        - Делает моделирование, риггинг и в общем интеграцию моделей в **Voxel Core** намного проще.
     
 * **Остальное:**
 
     - **Unity/C#**: Экспериментальные игры `Gloomy Store, Alive, FrontBlox, Updesim, и т.д.` (см. [onran0.github.io/portfolio](https://onran0.github.io/portfolio.html));
     - **HTML/CSS**: [onran0.github.io](https://onran0.github.io/index.html), [spookylauncher.github.io](https://spookylauncher.github.io);
-    - **JavaScript**:
-        - [matx](https://github.com/Onran0/matx) - язык программирования, транслирующийся в формулу для математического блока из игры [Sandbox World](https://store.steampowered.com/app/1831480/Sandbox_World/). (W.I.P)
-            - Позволит писать более масштабные проекты намного быстрее благодаря сахару и абстракциям.
     - **C++**: некоторые вклады в [VoxelCore](https://github.com/MihailRis/voxelcore):
         - `Support multiple world generators + Flat world generator` [#153](https://github.com/MihailRis/voxelcore/pull/153);
         - `"file" library update` [#162](https://github.com/MihailRis/voxelcore/pull/162);
