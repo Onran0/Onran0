@@ -1,83 +1,11 @@
-## Привет!
+<div align="center">
+    <h1>Hello!</h1>
+    <p>I love programming. It's my calling</p>
+    <p>See more about me <a href="./more-ru.md">here</a>.</p>
+</div>
 
-Основные инструменты: `Java, Lua, JavaScript`
+###
 
-Вторичные инструменты отсортированные от большей эрудиции: `VoxelCore, Unity, C#, HTML/CSS, C++`
-
-Инженер-разработчик, в основном ориентированный на системное и движковое программирование:
-архитектура, бинарные форматы, протоколы, I/O, расширяемые движки, инструменты и т.д.
-
----
-
-**Опыт и направления:**
-*   **Java:** Абсолютно разные направления, начиная от модификации старых версий Minecraft, заканчивая ассемблером и графическим движком. Использую язык как универсальный инструмент для реализации сложных проектов.
-
-    Примеры:
-    
-    - Консольный менеджер паролей [Passer](https://github.com/Onran0/Passer);
-      - Создавался по большей части ради интереса, однако возможно кому-то ещё пригодится практически, так как все данные хранятся абсолютно оффлайн и эталонно зашифрованы;
-      - Довольно мобилен, однако на "любителя" из-за направления проекта и отсутствия **GUI**.
-
-    
-    - Библиотека [JSW](https://github.com/Onran0/JSW) для удобной работы с бинарным форматом .structure игры [Sandbox World](https://store.steampowered.com/app/1831480/Sandbox_World/);
-      - Решала проблему для генерации шаблонных построек вместо долгой ручной муторной постройки, однако можно найти и другие практичные применения;
-      - Долгое время была единственной библиотекой для работы с этим форматом. Сейчас имеется альтернатива на **Rust**: [sw-structure-io](https://github.com/nukecat/sw-structure-io). Однако оно всё ещё уступает **JSW**, так как не поддерживает новые версии формата.
-
-    
-    - [medpow8-assembler](https://github.com/Onran0/medpow8-assembler) для собственной архитектуры ЦП [medpow8](https://github.com/Onran0/medpow8) G0;
-      - Архитектура ЦП сама по себе проектировалась как супер-минималистичная, которую можно построить собственными руками в любой среде, где присутствуют логические вентили;
-      - А сам ассемблер производит компиляцию человекочитаемых инструкций в машинный код, соответствующий данной архитектуре.
-
-    
-    - [spookylauncher](https://github.com/spookylauncher/spookylauncher) для удобной игры в мистические версии Minecraft. (W.I.P)
-      - Решает проблемы того, что каждая __мистическая версия__ майнкрафта за собой тянет нативесы, звуки и библиотеки. Также непонятно безопасно ли запускать такие версии;
-      - Проект на релизе будет решать обе проблемы - звуки, нативесы и библиотеки хранятся и устанавливаются независимо от версий, а версия будет запускаться в изолированном контейнере.
-
-*   **VoxelCore/Lua:** скриптинг и логика. В основном использую для создания контент-паков для [VoxelCore](https://github.com/MihailRis/voxelcore), однако проекты зачастую также сложны.
-
-    Примеры:
-    - [kcp2vc](https://github.com/Onran0/kcp2vc) для работы с протоколом **kcp**;
-        - По большей части также создавался ради интереса. Практического применения не нашёл, однако дал опыт работы с **kcp**.
-
-      
-    - [VCcURL](https://github.com/Onran0/VCcURL) для работы с **cURL**;
-        - Также создавался ради интереса и не нашёл практического применения, но расширил знания о протоколе **HTTP**, возможных вариантах реализации **IPC**, а также о работе с **cURL CLI**.
-
-    
-    - [VCLibPNG](https://github.com/Onran0/VCLibPNG) для **I/O** с **PNG**.
-        - На момент создания решал проблемы того, что в **VoxelCore** нельзя было динамически редактировать и загружать **PNG** изображения. Вот несколько проектов, где была использована данная библиотека: [The Signs](https://voxelworld.ru/mods/the-signs), [better-map](https://github.com/GHOST3118/better-map/tree/main)
-
-* **JavaScript:** Конкретного направления также нет. Использую там, где это необходимо, однако считаю язык весьма удобным.
-
-    Примеры:
-    - [matx](https://github.com/Onran0/matx) - язык программирования, транслирующийся в формулу для математического блока из игры [Sandbox World](https://store.steampowered.com/app/1831480/Sandbox_World/). (W.I.P)
-        - Позволит писать более масштабные проекты намного быстрее благодаря сахару и абстракциям.
-
-    
-    - [voxelbench](https://github.com/Onran0/voxelbench) - плагин для блокбенча, позволяющий экспортировать модели в формат `.vcm` (Voxel Core Model).
-        - Делает моделирование, риггинг и в общем интеграцию моделей в **Voxel Core** намного проще.
-    
-* **Остальное:**
-
-    - **Unity/C#**: Экспериментальные игры `Gloomy Store, Alive, FrontBlox, Updesim, и т.д.` (см. [onran0.github.io/portfolio](https://onran0.github.io/portfolio.html));
-    - **HTML/CSS**: [onran0.github.io](https://onran0.github.io/index.html), [spookylauncher.github.io](https://spookylauncher.github.io);
-    - **C++**: некоторые вклады в [VoxelCore](https://github.com/MihailRis/voxelcore):
-        - `Support multiple world generators + Flat world generator` [#153](https://github.com/MihailRis/voxelcore/pull/153);
-        - `"file" library update` [#162](https://github.com/MihailRis/voxelcore/pull/162);
-        - `Conversion to/from bytes and data buffer modules + file.write_bytes fix` [#166](https://github.com/MihailRis/voxelcore/pull/166);
-        - `file.write_bytes fix` [#202](https://github.com/MihailRis/voxelcore/pull/202);
-        - `Streaming I/O and support of named pipes` [#570](https://github.com/MihailRis/voxelcore/pull/570);
-        - `UDP support for Network and scripting` [#598](https://github.com/MihailRis/voxelcore/pull/598);
-        - `UDP Fixes` [#604](https://github.com/MihailRis/voxelcore/pull/604).
-
----
-
-## Немного обо мне
-
-- Учусь программировать более 5-и лет;
-
-- Предпочитаю программировать своими руками. В разработке использую ИИ только для быстрой справки, чтобы определять качество и архитектуру своих проектов;
-
-- Не люблю плодить незаконченные проекты;
-
-- Для меня программирование - нечто больше, чем инструмент для реализации желаний. Продумывать архитектуру, взаимодействие частей программы, выбирать более практичные решения и в конце писать код - доставляет мне удовольствие.
+<div align="center">
+    <img src="./profile/hat.png" width="64">
+</div>
