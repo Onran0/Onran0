@@ -1,8 +1,6 @@
 name: Update README cards
 
 on:
-  schedule:
-    - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
@@ -11,12 +9,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate stats card
+      - name: Generate general stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
+          options: username=${{ github.repository_owner }}&show=prs_merged&show_icons=true&theme=dark&count_private=true
           path: profile/stats.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate languages stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=dark&count_private=true
+          path: profile/langs.svg
           token: ${{ secrets.PAT }}
 
       - name: Commit cards
